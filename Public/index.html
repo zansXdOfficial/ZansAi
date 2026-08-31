@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070b15">
+<title>ZANE AI Studio Pro</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="noise"></div>
+<header>
+  <a class="logo" href="#"><span class="logoBox">Z</span><span><b>ZANE AI</b><small>STUDIO PRO</small></span></a>
+  <div class="headRight"><span class="online"><i></i><em id="status">Connecting</em></span><button class="gear" id="about">?</button></div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="badge">AI PHOTO WORKSPACE • ZANE OFC</div>
+  <h1>Bikin foto yang <span>terlihat nyata.</span></h1>
+  <p>Generate, edit, analisis, dan poles foto dengan workflow AI dalam satu studio. Setiap hasil diberi watermark <b>ZANE OFC</b>.</p>
+</section>
+
+<section class="workspace">
+  <aside class="side">
+    <div class="sideTitle">STUDIO TOOLS</div>
+    <button class="nav active" data-tool="generate"><span>✦</span><div><b>Generate Image</b><small>Prompt → Foto</small></div></button>
+    <button class="nav" data-tool="vision"><span>⌁</span><div><b>Prompt dari Foto</b><small>Foto → Prompt</small></div></button>
+    <button class="nav" data-tool="swap"><span>◉</span><div><b>Face Swap</b><small>Wajah → Target</small></div></button>
+    <button class="nav" data-tool="hdr"><span>ϟ</span><div><b>HDR Enhancer</b><small>Detail → Jernih</small></div></button>
+    <div class="engine"><small>POWERED BY</small><b>GPT-IMAGE-2</b><p>High-fidelity image generation & editing.</p></div>
+  </aside>
+  <section class="panel" id="panel"></section>
+</section>
+
+<section class="historySection">
+  <div class="sectionHead"><div><small>LOCAL HISTORY</small><h2>Hasil terakhir</h2></div><button class="textBtn" id="clearHistory">Hapus semua</button></div>
+  <div id="history" class="history"><div class="empty">Belum ada hasil. Buat gambar pertamamu ✦</div></div>
+</section>
+</main>
+
+<div class="toast" id="toast"></div>
+<div class="modal" id="aboutModal"><div class="modalCard"><button id="aboutClose">×</button><h2>ZANE AI Studio Pro</h2><p>Frontend premium untuk workflow AI foto. API key tetap di server.</p><p class="muted">Model gambar: GPT-Image-2. Analisis prompt: GPT-5.6. Untuk produksi, tambahkan auth, rate limit, moderation, storage, database dan billing.</p></div></div>
+<script src="/app.js"></script>
+</body></html>
